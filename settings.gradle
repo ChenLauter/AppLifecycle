@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+//        gradleApi()
+    }
+}
+rootProject.name = "AppLifecycle"
+include ':app'
+include ':api'
+include ':plugin'
+include ':processor'
+include ':annotation'
+include ':app_module_home'
