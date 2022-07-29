@@ -8,7 +8,6 @@ object AppLifecycleManager {
     private var callbacks: MutableList<AppLifecycleCallback>? = null
 
     fun onCreate(context: Context) {
-        Log.d("AppLifecycleManager","$callbacks")
         callbacks?.run {
             sortBy { it.getPriority() }
             forEach { it.onCreate(context) }
